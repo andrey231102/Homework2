@@ -353,8 +353,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9125f97a961d74b9560b3e6a9c1496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemy: {fileID: 2454492685201659802, guid: e78758ed4ff413e4284baf190b5b5de8, type: 3}
-  spawners:
+  _enemyPattern: {fileID: 2454492685201659802, guid: e78758ed4ff413e4284baf190b5b5de8,
+    type: 3}
+  _spawnTime: 2
+  _spawners:
   - {fileID: 1264069320}
   - {fileID: 279898240}
   - {fileID: 277498045}

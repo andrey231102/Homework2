@@ -4,22 +4,22 @@ using UnityEngine;
 
 public class Spawners : MonoBehaviour
 {
-    [SerializeField] private GameObject _enemy;
-    [SerializeField] private GameObject[] spawners = new GameObject[5];
-    void Start()
+    [SerializeField] private GameObject _enemyPattern;
+    [SerializeField] private float _spawnTime;
+    
+    private void Start()
     {
-        StartCoroutine(SpawnObject(spawners));
+        Transform[] spawnersLocation = GetComponentsInChildren<Transform>();
+        StartCoroutine(SpawnSubject(_enemyPattern, spawnersLocation, _spawnTime));
     }
 
-    IEnumerator SpawnObject(GameObject[] objects)
+    private IEnumerator SpawnSubject(GameObject subjectPattern, Transform[] subjects, float time)
     {
-        int spawnersNumber; 
-        var spawnTime = new WaitForSeconds(2f);
+        var spawnTime = new WaitForSeconds(time);
         while (true)
         {  
-            spawnersNumber = Random.Range(0, spawners.Length);
             yield return spawnTime;
-            Instantiate(_enemy, spawners[spawnersNumber].transform);
+            Instantiate(subjectPattern, subjects[Random.Range(0, subjects.Length)].transform);
         }
     }
 }
