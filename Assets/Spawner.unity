@@ -225,7 +225,7 @@ GameObject:
   m_Component:
   - component: {fileID: 277498047}
   m_Layer: 0
-  m_Name: GameObject (2)
+  m_Name: EnemySpawner3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -255,7 +255,7 @@ GameObject:
   m_Component:
   - component: {fileID: 279898242}
   m_Layer: 0
-  m_Name: GameObject (1)
+  m_Name: EnemySpawner2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -285,7 +285,7 @@ GameObject:
   m_Component:
   - component: {fileID: 383815526}
   m_Layer: 0
-  m_Name: GameObject (4)
+  m_Name: EnemySpawner5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -316,7 +316,7 @@ GameObject:
   - component: {fileID: 555324586}
   - component: {fileID: 555324587}
   m_Layer: 0
-  m_Name: Spawners
+  m_Name: EnemySpawners
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -353,15 +353,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c9125f97a961d74b9560b3e6a9c1496, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _enemyPattern: {fileID: 2454492685201659802, guid: e78758ed4ff413e4284baf190b5b5de8,
+  _enemyTemplate: {fileID: 2454492685201659802, guid: e78758ed4ff413e4284baf190b5b5de8,
     type: 3}
-  _spawnTime: 2
-  _spawners:
-  - {fileID: 1264069320}
-  - {fileID: 279898240}
-  - {fileID: 277498045}
-  - {fileID: 649832609}
-  - {fileID: 383815524}
+  _periodOfSpawn: 2
 --- !u!1 &649832609
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,7 +366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 649832611}
   m_Layer: 0
-  m_Name: GameObject (3)
+  m_Name: EnemySpawner4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -577,7 +571,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1264069322}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: EnemySpawner1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
